@@ -1,4 +1,4 @@
-$FileName = "$env:tmp/$env:USERNAME-INFODUMP-$(get-date -f yyyy-MM-dd_hh-mm).txt"
+$FileName = "$env:tmp/$env:USERNAME-BASICINFO-$(get-date -f yyyy-MM-dd_hh-mm).txt"
 
 function Get-FullName
 {
@@ -87,6 +87,7 @@ $LocalIP = Get-LocalIP
 $MAC = Get-MAC
 
 $Output = @"
+-- Basic Info --
 
 Full Name: $FullName
 
@@ -98,7 +99,6 @@ $LocalIP
 
 MAC:
 $MAC
-
 "@
 
 $Output > $FileName
